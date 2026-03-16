@@ -1,0 +1,6 @@
+SELECT
+  Nivel_de_rentabi AS nivel,
+  ROUND(SUM(beneficio_total_eur), 2) AS beneficio_total
+FROM tienda_limpia
+GROUP BY Nivel_de_rentabi
+ORDER BY beneficio_total DESC;
