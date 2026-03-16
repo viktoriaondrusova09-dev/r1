@@ -1,0 +1,7 @@
+SELECT
+  Estado,
+  COUNT(*) AS num_ventas,
+  SUM(Unidades_vendida) AS unidades
+FROM tienda_limpia
+GROUP BY Estado
+ORDER BY num_ventas DESC;
